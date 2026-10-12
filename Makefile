@@ -1,7 +1,7 @@
 .PHONY: run dev install
 
 run:
-	uv run python src/bookseller_assistant/app.py
+	uv run flask --app src/bookseller_assistant/app.py run
 
 dev:
 	uv run flask --app src/bookseller_assistant/app.py run --debug
